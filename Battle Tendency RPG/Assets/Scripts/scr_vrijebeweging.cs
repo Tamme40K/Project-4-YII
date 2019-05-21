@@ -20,8 +20,8 @@ public class scr_vrijebeweging : MonoBehaviour
         {
             pointA = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
 
-            circle.transform.position = pointA * -1;
-            outerCircle.transform.position = pointA * -1;
+            circle.transform.position = pointA;
+            outerCircle.transform.position = pointA;
             circle.GetComponent<SpriteRenderer>().enabled = true;
             outerCircle.GetComponent<SpriteRenderer>().enabled = true;
         }
@@ -44,7 +44,7 @@ public class scr_vrijebeweging : MonoBehaviour
             Vector2 direction = Vector2.ClampMagnitude(offset, 1.0f);
             moveCharacter(direction * -1);
 
-            circle.transform.position = new Vector2(pointA.x + direction.x, pointA.y + direction.y) * -1;
+            circle.transform.position = new Vector2(pointA.x + direction.x, pointA.y + direction.y);
         }
         else
         {
