@@ -16,15 +16,9 @@ public class scr_vrijebeweging : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            pointA = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
+        // pointA = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
+        pointA = new Vector3(-10, -3, Camera.main.transform.position.z);
 
-            circle.transform.position = pointA;
-            outerCircle.transform.position = pointA;
-            circle.GetComponent<SpriteRenderer>().enabled = true;
-            outerCircle.GetComponent<SpriteRenderer>().enabled = true;
-        }
         if (Input.GetMouseButton(0))
         {
             touchStart = true;
@@ -45,13 +39,9 @@ public class scr_vrijebeweging : MonoBehaviour
             moveCharacter(direction);
 
             circle.transform.position = new Vector2(pointA.x + direction.x, pointA.y + direction.y);
+        } else {
+            circle.transform.position = pointA;
         }
-        else
-        {
-            circle.GetComponent<SpriteRenderer>().enabled = false;
-            outerCircle.GetComponent<SpriteRenderer>().enabled = false;
-        }
-
     }
     void moveCharacter(Vector2 direction)
     {
