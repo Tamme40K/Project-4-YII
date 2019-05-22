@@ -12,14 +12,14 @@ public class scr_vrijebeweging : MonoBehaviour
 
     public Transform circle;
     public Transform outerCircle;
+    //private Rect touchArea = new Rect(120, 0, 200, 200);
 
     // Update is called once per frame
     void Update()
     {
-        // pointA = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
-        pointA = new Vector3(-10, -3, Camera.main.transform.position.z);
+        pointA = new Vector3(-7, -3, Camera.main.transform.position.z);
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0)) 
         {
             touchStart = true;
             pointB = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
@@ -28,11 +28,10 @@ public class scr_vrijebeweging : MonoBehaviour
         {
             touchStart = false;
         }
-
     }
     private void FixedUpdate()
     {
-        if (touchStart)
+        if (touchStart) //&& touchArea.Contains(Input.mousePosition))
         {
             Vector2 offset = pointB - pointA;
             Vector2 direction = Vector2.ClampMagnitude(offset, 1.0f);
