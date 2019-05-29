@@ -163,6 +163,10 @@ MonoBehaviour:
   speed: 5
   circle: {fileID: 1012673789}
   outerCircle: {fileID: 2034949536}
+  minX: 0
+  maxX: 400
+  minY: 0
+  maxY: 400
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

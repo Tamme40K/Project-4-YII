@@ -12,7 +12,13 @@ public class scr_vrijebeweging : MonoBehaviour
 
     public Transform circle;
     public Transform outerCircle;
-    //private Rect touchArea = new Rect(120, 0, 200, 200);
+
+    public double minX = 0.0;
+    public double maxX = 400.0;
+    public double minY = 0.0;
+    public double maxY = 400.0;
+
+    //public Rect touchArea = new Rect(x, -4, 4, 4); //Rect(xMin, 0, 200, 200
 
     // Update is called once per frame
     void Update()
@@ -31,7 +37,11 @@ public class scr_vrijebeweging : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (touchStart) //&& touchArea.Contains(Input.mousePosition))
+        if (touchStart && (
+            Input.mousePosition.x < maxX &&
+            Input.mousePosition.x > minX &&
+            Input.mousePosition.y < maxY &&
+            Input.mousePosition.y > minY))
         {
             Vector2 offset = pointB - pointA;
             Vector2 direction = Vector2.ClampMagnitude(offset, 1.0f);
