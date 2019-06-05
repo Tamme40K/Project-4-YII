@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }
 
     // LateUpdate is called last not every frame, in update kan het zijn dat je update uitvoerd voor je player beweegt

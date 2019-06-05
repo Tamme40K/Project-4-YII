@@ -10,28 +10,35 @@ public enum EnemyState
     stagger
 }
 
-
 public class Enemy : MonoBehaviour
 {
     //wat heeft elke enemy minimaal
     public EnemyState currentState;
-    public int health;
+    public FloatValue maxHealth;
+    public float health;
     public string enemyName;
     public int baseAttack;
     public float moveSpeed;
 
-    public void Knock(Rigidbody2D myRigidbody, float knockTime)
+    private void Awake()
     {
-        health = health - 1;
+        health = maxHealth.initialValue; //deze word gepakt van de scriptable object die gemaakt is
+    }
+
+    //enemey takedamage health = health - damage ALS health 0 word na de damage taken dan word gameobject false zodat er geen onzichtbare log is
+    private void TakeDamage(float damage)
+    {
+        health -= damage;
         if (health <= 0)
         {
-            Debug.Log("enemy is dood");
+            this.gameObject.SetActive(false);
         }
-        else
-        {
-           StartCoroutine(KnockCo(myRigidbody, knockTime));
-        }
+    }
 
+    public void Knock(Rigidbody2D myRigidbody, float knockTime, float damage)
+    {
+        StartCoroutine(KnockCo(myRigidbody, knockTime));
+        TakeDamage(damage);
     }
 
     //Timer maken zodat de knockback stopt en niet voor altijd blijft sliden
@@ -43,17 +50,6 @@ public class Enemy : MonoBehaviour
             myRigidBody.velocity = Vector2.zero;
             currentState = EnemyState.idle;
             myRigidBody.velocity = Vector2.zero;
-
-            //dit hieronder werkt niet want hij krijgt dan -1 hp als hij word geraakt in het algemeen niet alleen door het zwaard. 
-            //health = health - 1;
-            //if (health <= 0)
-            //{
-            //    Debug.Log("enemy dood");
-            //}
-            //dit word gestart als je word geraakt door een player je zou je hp kunnen verminderen en als je dood gaat als enemy SetActive(false) doen anders blijft er misschien
-            //een ontzichtbare enemy collision op de map 
-            //wss dit en dan een if statement om te checken of het 0 word > en die activeerd dan een death animatie + SetActive(false)
-            //eventueel nog punten erbij
         }
     }
 }

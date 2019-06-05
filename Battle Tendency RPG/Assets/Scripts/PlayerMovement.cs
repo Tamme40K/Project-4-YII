@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidbody; //rigidBody van player
     private Vector3 change; //hoeveel veranderd de positie van de player
     private Animator animator; //de animator die je hebt gemaakt op de player
+    public FloatValue currentHealth;
+    public Message playerHealthSignal;
+    public VectorValue startingPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>(); // je pakt de animator uit unity
         animator.SetFloat("moveX", 0);
         animator.SetFloat("moveY", -1);
+        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame
@@ -81,9 +85,18 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-    public void Knock(float knockTime)
+    public void Knock(float knockTime, float damage)
     {
-        StartCoroutine(KnockCo(knockTime));
+        currentHealth.RuntimeValue -= damage;
+        playerHealthSignal.Raise(); //je raised een signal dus andere objecten weten nu dat er iets gebeurt met playerhealth
+        if (currentHealth.RuntimeValue > 0)
+        {
+            StartCoroutine(KnockCo(knockTime));
+        }
+        else
+        {
+            this.gameObject.SetActive(false); //dood
+        }
     }
 
     //Timer maken zodat de knockback stopt en niet voor altijd blijft sliden

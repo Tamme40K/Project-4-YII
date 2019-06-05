@@ -27,7 +27,7 @@ public class RoomMove : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !other.isTrigger)
         {
             //Je pakt de cam en gebruikt de min/max van cameramovement op de min/maxposition aan te passen (de boundaries)..
             //..als je de trigger raakt
