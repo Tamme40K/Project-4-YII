@@ -49422,7 +49422,7 @@ PrefabInstance:
     - target: {fileID: 4594535901131768961, guid: dd19f0cf00a315542be16bc42cfc09de,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4594535901131768961, guid: dd19f0cf00a315542be16bc42cfc09de,
         type: 3}
@@ -49469,6 +49469,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4594535901151448609, guid: dd19f0cf00a315542be16bc42cfc09de,
+        type: 3}
+      propertyPath: m_Name
+      value: Attack
+      objectReference: {fileID: 0}
     - target: {fileID: 4594535901151448615, guid: dd19f0cf00a315542be16bc42cfc09de,
         type: 3}
       propertyPath: m_IsActive
@@ -49479,6 +49484,25 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4594535901140696003, guid: dd19f0cf00a315542be16bc42cfc09de,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: afa1becd55ffe844893c200cd8084870,
+        type: 3}
+    - target: {fileID: 949682050, guid: dd19f0cf00a315542be16bc42cfc09de, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 949682049, guid: dd19f0cf00a315542be16bc42cfc09de, type: 3}
+      propertyPath: m_Name
+      value: Interact
+      objectReference: {fileID: 0}
+    - target: {fileID: 949682053, guid: dd19f0cf00a315542be16bc42cfc09de, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ba6a621f2be7d6d44b6bb2378ed97a9d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd19f0cf00a315542be16bc42cfc09de, type: 3}
 --- !u!1001 &6806154737338425853
