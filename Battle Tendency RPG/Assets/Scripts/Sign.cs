@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
-
 public class Sign : MonoBehaviour
 {
     public GameObject dialogBox; //pakt de dialogbox in unity
