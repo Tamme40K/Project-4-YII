@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public FloatValue currentHealth;
     public Message playerHealthSignal;
     public VectorValue startingPosition;
+    public GameObject deathEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -95,7 +96,17 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            DeathEffect();
             this.gameObject.SetActive(false); //dood
+        }
+    }
+
+    private void DeathEffect()
+    {
+        if (deathEffect != null)
+        {
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
         }
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class log : Enemy
 {
-    private Rigidbody2D myRigidbody;
+    public Rigidbody2D myRigidbody;
     public Transform target; //target selecteren (locatie ervan)
     public float chaseRadius; 
     public float attackRadius;
@@ -18,6 +18,7 @@ public class log : Enemy
         myRigidbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform; //locatie van player(target)
+        anim.SetBool("wakeUp", true);
     }
     
     void FixedUpdate()
@@ -26,7 +27,7 @@ public class log : Enemy
     }
 
     //vind afstand van log en target
-    void CheckDistance()
+    public virtual void CheckDistance()
     {
         if (Vector3.Distance(target.position, transform.position) <= chaseRadius && Vector3.Distance(target.position, transform.position) > attackRadius) //als player en log positie kleiner is dan chaseradius
         {
@@ -54,7 +55,7 @@ public class log : Enemy
         anim.SetFloat("moveY", setVector.y);
     }
 
-    private void changeAnim(Vector2 direction)
+    public void changeAnim(Vector2 direction)
     {
         if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
         {
