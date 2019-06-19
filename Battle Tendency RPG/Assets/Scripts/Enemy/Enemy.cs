@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum EnemyState
 {
@@ -10,7 +11,7 @@ public enum EnemyState
     stagger
 }
 
-public class Enemy : MonoBehaviour
+public class Enemy : getScore
 {
     //wat heeft elke enemy minimaal
     public EnemyState currentState;
@@ -20,7 +21,7 @@ public class Enemy : MonoBehaviour
     public int baseAttack;
     public float moveSpeed;
     public GameObject deathEffect;
-
+    public int score_worth;
 
     private void Awake()
     {
@@ -35,6 +36,10 @@ public class Enemy : MonoBehaviour
         {
             DeathEffect();
             this.gameObject.SetActive(false);
+            //AddPoints(score_worth);
+            //ReadScore();
+            UpdatePoints(score_worth);
+            ReadPoints();
         }
     }
 
@@ -64,4 +69,6 @@ public class Enemy : MonoBehaviour
             myRigidBody.velocity = Vector2.zero;
         }
     }
+
+
 }
