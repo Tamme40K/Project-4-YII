@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemy
   - targetLocation
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -40,8 +41,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Collission-II
+    uniqueID: 1518548655
+    locked: 0
+  - name: Ground-II
+    uniqueID: 4015108401
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Overlayer
+    uniqueID: 2221843977
+    locked: 0
+  - name: Signs
+    uniqueID: 439056593
     locked: 0
   - name: Player
     uniqueID: 2280930919

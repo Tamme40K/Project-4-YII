@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8931384737180431133}
   - component: {fileID: 8931384737180431134}
   - component: {fileID: 8931384737180431135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: log
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8931384737180431128}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.16, y: -3.53, z: 14.482422}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2014036377
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5034061168752090764, guid: 103f82e2ba109a8408d6b4a9de463e46,
     type: 3}
@@ -170,6 +170,9 @@ MonoBehaviour:
   enemyName: the Log
   baseAttack: 1
   moveSpeed: 1.5
+  deathEffect: {fileID: 6410281091442359049, guid: c53580e5f0bb0b14389e1c1f34bc866d,
+    type: 3}
+  myRigidbody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
   attackRadius: 0.9
