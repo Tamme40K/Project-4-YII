@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HouseInside.unity
     guid: 1f80cc32511faf949a3c38d837ed9232
   - enabled: 1
-    path: Assets/Scenes/SampleScene2.unity
+    path: Assets/Scenes/SampleScene.unity
     guid: 242c7f291002bc249b1c789589a911ce
+  - enabled: 1
+    path: Assets/Scenes/HotConnectionHubWorld.unity
+    guid: 41bb82aea8faad54881b57c9e1bfef2e
   m_configObjects: {}
