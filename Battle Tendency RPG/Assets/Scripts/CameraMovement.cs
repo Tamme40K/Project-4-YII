@@ -6,8 +6,6 @@ public class CameraMovement : MonoBehaviour
 {
     public Transform target; //wat moet de camera volgen
     public float smoothing; //hoe snel beweegt de camera naar de target
-    public Vector2 maxPosition; //min en maxPosition voor max camera range zodat niet out of bound kan zien
-    public Vector2 minPosition; 
 
     // Start is called before the first frame update
     void Start()
@@ -22,19 +20,7 @@ public class CameraMovement : MonoBehaviour
         {
             Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
 
-            //clamp zodat hij niet verder kan gaan dan aangegeven values, en de min en maxposition geef je aan in Unity
-            targetPosition.x = Mathf.Clamp(targetPosition.x, minPosition.x, maxPosition.x);
-            targetPosition.y = Mathf.Clamp(targetPosition.y, minPosition.y, maxPosition.y);
-
-            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing); //plek die je hebt, waar je naartoe wilt, welke snelheid je moet gaan
-
-
-
-
-
-        }
-        
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing); //plek die je hebt, waar je naartoe wilt, welke snelheid je moet 
+        }   
     }
-
-
 }

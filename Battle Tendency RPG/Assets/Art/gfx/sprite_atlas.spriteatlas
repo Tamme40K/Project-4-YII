@@ -425,7 +425,6 @@ SpriteAtlas:
   - {fileID: 8333231276030249781, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
   - {fileID: -4430392651179603617, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
   - {fileID: -2595804346393511659, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
-  - {fileID: -7232932138374895996, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
   - {fileID: 2906919875820574449, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
   - {fileID: 1429353086803496727, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
   - {fileID: -6898227748885246477, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
@@ -1845,8 +1844,6 @@ SpriteAtlas:
   - {fileID: -6960371683831875272, guid: 3f3abe0db9f0fb34da10b67ad3dd319e, type: 3}
   - {fileID: 6469460937200175538, guid: 3f3abe0db9f0fb34da10b67ad3dd319e, type: 3}
   - {fileID: 2924928888349640390, guid: 3f3abe0db9f0fb34da10b67ad3dd319e, type: 3}
-  - {fileID: 21300000, guid: afa1becd55ffe844893c200cd8084870, type: 3}
-  - {fileID: 21300000, guid: ba6a621f2be7d6d44b6bb2378ed97a9d, type: 3}
   m_PackedSpriteNamesToIndex:
   - slime_194
   - slime_186
@@ -2227,7 +2224,6 @@ SpriteAtlas:
   - objects_2
   - objects_3
   - objects_138
-  - objects_141
   - objects_139
   - objects_140
   - objects_142
@@ -3647,7 +3643,5 @@ SpriteAtlas:
   - Overworld_623
   - Overworld_673
   - Overworld_129
-  - B_button
-  - A_button
   m_Tag: sprite_atlas
   m_IsVariant: 0
