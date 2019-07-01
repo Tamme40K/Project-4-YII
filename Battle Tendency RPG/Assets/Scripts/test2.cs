@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class getScore : MonoBehaviour
+public class test2 : MonoBehaviour
 {
     public Text score;
     private string testphrase;
@@ -11,7 +12,7 @@ public class getScore : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        ReadPoints();  
+        ReadPoints();
     }
 
 
@@ -39,6 +40,7 @@ public class getScore : MonoBehaviour
     {
         var getScore = new DataService("highschore.db");
         string nickname2 = (PlayerPrefs.GetString("tutorialTextKeyName"));
+        getScore.CreateHighscore(nickname2);
         //getScore.ChangePoints(); DIT WERKT
         //UpdatePoints(); DIT WERKT 
         //getScore.CreateDB ();
@@ -49,15 +51,15 @@ public class getScore : MonoBehaviour
         //ds.CreatePerson ();
         //ToConsole("New person has been created");
 
-        var score2 = getScore.GetScore(nickname2);
-        Debug.Log(score2);
-        testphrase = score2.ToString();
-        Debug.Log(testphrase);
-        string[] testzin = testphrase.Split(',');
-        Debug.Log(testzin[2]);
-        playerScore = testzin[2];
-        Debug.Log(playerScore);
-        score.text = playerScore;
+        //var score2 = getScore.GetScore();
+        //Debug.Log(score2);
+        //testphrase = score2.ToString();
+        //Debug.Log(testphrase);
+        //string[] testzin = testphrase.Split(',');
+        //Debug.Log(testzin[2]);
+        //playerScore = testzin[2];
+        //Debug.Log(playerScore);
+        //score.text = playerScore;
         //scoreholder = testzin[4].ToString();
 
         //score.text = scoreholder;

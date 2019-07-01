@@ -90,16 +90,16 @@ public class DataService  {
 		return _connection.Table<Person>().Where(x => x.Name == "Johnny").FirstOrDefault();
 	}
 
-    public string GetScore()
+    public string GetScore(string nickname)
     {
-        var p = _connection.Table<Highscore>().Where(x => x.Name == "Tom").FirstOrDefault();
+        var p = _connection.Table<Highscore>().Where(x => x.Name == nickname).FirstOrDefault();
 
         return p.ToString();
     }
 
-    public string GetNickname()
+    public string GetNickname(string nickname)
     {
-        var p = _connection.Table<Nickname>().Where(x => x.Name == "Tom").FirstOrDefault();
+        var p = _connection.Table<Nickname>().Where(x => x.Name == nickname).FirstOrDefault();
 
         return p.ToString();
     }
@@ -109,9 +109,9 @@ public class DataService  {
         _connection.Table<Highscore>().Where(x => x.Name == "Tom");
     }
 
-    public void ChangePoints(int score_worth)
+    public void ChangePoints(int score_worth, string nickname)
     {
-        var tp = _connection.Query<Highscore>("UPDATE Highscore SET score = score + " + score_worth + " WHERE name = 'Tom';").FirstOrDefault();
+        var tp = _connection.Query<Highscore>("UPDATE Highscore SET score = score + " + score_worth + " WHERE name = '"+nickname+"';").FirstOrDefault();
 
         _connection.Update(tp);
     }
@@ -127,4 +127,26 @@ public class DataService  {
 		_connection.Insert (p);
 		return p;
 	}
+
+    public Nickname CreateNickname(string name)
+    {
+        var p = new Nickname
+        {
+            Name = name,
+            Score = 0
+        };
+        _connection.Insert(p);
+        return p;
+    }
+
+    public Highscore CreateHighscore(string name)
+    {
+        var p = new Highscore
+        {
+            Name = name,
+            Score = 0
+        };
+        _connection.Insert(p);
+        return p;
+    }
 }

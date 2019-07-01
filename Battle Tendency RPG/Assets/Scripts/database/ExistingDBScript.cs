@@ -21,18 +21,18 @@ public class ExistingDBScript : MonoBehaviour {
 		//ds.CreatePerson ();
 		//ToConsole("New person has been created");
 
-		var p = ds.GetNickname();
-        testphrase = p.ToString();
-        string[] testzin = testphrase.Split(',');
+		//var p = ds.GetNickname();
+        //testphrase = p.ToString();
+        //string[] testzin = testphrase.Split(',');
 
-        nicknameholder = testzin[1].ToString();
-        scoreholder = testzin[4].ToString();
+        //nicknameholder = testzin[1].ToString();
+        //scoreholder = testzin[4].ToString();
 
-        Debug.Log(testzin[1]);
-        Debug.Log(testzin[4]);
+        //Debug.Log(testzin[1]);
+        //Debug.Log(testzin[4]);
 
-        nickname.text = nicknameholder;
-        score.text = scoreholder;
+        //nickname.text = nicknameholder;
+        //score.text = scoreholder;
 
         //Debug.Log(testphrase);
         //ToConsole(p.ToString());
