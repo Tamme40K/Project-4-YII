@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8187005787894308415}
   - component: {fileID: 3423300078603424235}
   - component: {fileID: 4113305508224054442}
+  - component: {fileID: 6994460403481717239}
   m_Layer: 0
   m_Name: sign
   m_TagString: Untagged
@@ -67,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2014036377
-  m_SortingLayer: 2
+  m_SortingLayerID: 439056593
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 4479181887894498110, guid: 3f3abe0db9f0fb34da10b67ad3dd319e,
     type: 3}
@@ -134,3 +135,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6268454}
   m_EdgeRadius: 0
+--- !u!114 &6994460403481717239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6994460403481717238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a305ed4dc0516647b62f7ae3fc5d0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
+  dialog: Adventure ahead!
+  playerInRange: 0
+  context: {fileID: 11400000, guid: 6e1913120a8d17844b47484ad998770c, type: 2}
