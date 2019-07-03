@@ -26,9 +26,9 @@ public class hearth : powerUp
         {
 
             playerHealth.RuntimeValue += amountToIncrease;
-            if (playerHealth.initialValue > hearthContainers.RuntimeValue * 2f)
+            if (playerHealth.RuntimeValue > hearthContainers.RuntimeValue * 2f)
             {
-                playerHealth.initialValue = hearthContainers.RuntimeValue * 2f;
+                playerHealth.RuntimeValue = hearthContainers.RuntimeValue * 2f;
             }
             powerupSignal.Raise();
             Destroy(this.gameObject);
