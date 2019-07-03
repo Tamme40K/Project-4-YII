@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 public enum PlayerState //states die een player kunnen hebbben 
 {
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public Message playerHealthSignal;
     public VectorValue startingPosition;
     public GameObject deathEffect;
+    public string sceneToLoad;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +70,9 @@ public class PlayerMovement : MonoBehaviour
         if (change != Vector3.zero) //als er een change is DAN pas MoveCharacter method uitvoeren
         {
             MoveCharacter();
+            //round anders pak je twee kanten mee als hitbox
+            change.x = Mathf.Round(change.x);
+            change.y = Mathf.Round(change.y);
             animator.SetFloat("moveX", change.x); // je hebt in unity de parameters doorgegeven voor movement en hier geef je het values
             animator.SetFloat("moveY", change.y);
             animator.SetBool("moving", true); //je hebt in Animator een bool gemaakt als je gaat bewegen zet je moving op true zodat hij van state kan veranderen
@@ -107,6 +112,7 @@ public class PlayerMovement : MonoBehaviour
         {
             GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(effect, 1f);
+            SceneManager.LoadScene(sceneToLoad);
         }
     }
 

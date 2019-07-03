@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class Message : ScriptableObject //de observer
+public class Message : ScriptableObject
 {
-    public List<SignalListener> listeners = new List<SignalListener>(); //lijst van listeners die luisteren naar de signal(observer)
+    public List<SignalListener> listeners = new List<SignalListener>(); 
 
     public void Raise()
     {

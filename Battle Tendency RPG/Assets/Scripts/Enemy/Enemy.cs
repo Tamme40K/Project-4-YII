@@ -22,6 +22,7 @@ public class Enemy : getScore
     public float moveSpeed;
     public GameObject deathEffect;
     public int score_worth;
+    public LootTable thisLoot;
 
     private void Awake()
     {
@@ -35,11 +36,25 @@ public class Enemy : getScore
         if (health <= 0)
         {
             DeathEffect();
+            MakeLoot();
             this.gameObject.SetActive(false);
             //AddPoints(score_worth);
             //ReadScore();
             UpdatePoints(score_worth);
             ReadPoints();
+        }
+    }
+
+    // een method die kijkt of er loot is. zo ja dan instantiate je de loot object op de locatie van de enemy die dood is gemaakt
+    private void MakeLoot()
+    {
+        if (thisLoot != null)
+        {
+            powerUp current = thisLoot.Lootpowerup();
+            if (current != null)
+            {
+                Instantiate(current.gameObject, transform.position, Quaternion.identity);
+            }
         }
     }
 

@@ -10,9 +10,12 @@ public class TutorialManager : MonoBehaviour
     public Transform target;
     public IntValue tutorialnumber;
 
-    void Update()
+    void Start()
     {
         target = GameObject.FindWithTag("Player").transform; //locatie van player(target)
+    }
+    void Update()
+    {
 
         if (tutorialnumber.initialValue <= 3) //verander dit als je meer pop up berichten wilt maken
         {
@@ -31,7 +34,7 @@ public class TutorialManager : MonoBehaviour
 
             if (popUpIndex == 0)
             {
-                if /*(Input.GetMouseButtonDown(0))*/ (target.position != new Vector3(-6.6f, 1.0f, 0.0f))
+                if /*(Input.GetMouseButtonDown(0))*/ (target.position != new Vector3(-6.6f, 1.1f, 0.0f))
                 {
                     popUpIndex++;
                     tutorialnumber.initialValue++;
