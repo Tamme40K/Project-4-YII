@@ -7,6 +7,7 @@ TagManager:
   - enemy
   - targetLocation
   - Fire
+  - breakable
   layers:
   - Default
   - TransparentFX

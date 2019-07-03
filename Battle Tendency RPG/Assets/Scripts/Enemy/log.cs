@@ -39,6 +39,7 @@ public class log : Enemy
                 changeAnim(temp - transform.position);
                 myRigidbody.MovePosition(temp);
                 ChangeState(EnemyState.walk);
+
                 anim.SetBool("wakeUp", true ); // Maak wakker als in range is
             }
         }

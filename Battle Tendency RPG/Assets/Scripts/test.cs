@@ -1,8 +1,9 @@
-﻿using UnityEngine;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class getNickname : MonoBehaviour
+public class test : MonoBehaviour
 {
     public Text name;
     private string testphrase;
@@ -11,9 +12,10 @@ public class getNickname : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        var getNickname = new DataService("nickname.db");
         string nickname2 = (PlayerPrefs.GetString("tutorialTextKeyName"));
-        //getNickname.CreateDB ();
+        // Debug.Log(nickname + " in huis scene");
+        var getNickname = new DataService("nickname.db");
+        getNickname.CreateNickname(nickname2);
         //var people = ds.GetPersons ();
         //ToConsole (people);
 
@@ -21,15 +23,15 @@ public class getNickname : MonoBehaviour
         //ds.CreatePerson ();
         //ToConsole("New person has been created");
 
-        var nickname = getNickname.GetNickname(nickname2);
-        Debug.Log(nickname);
-        testphrase = nickname.ToString();
-        Debug.Log(testphrase);
-        string[] testzin = testphrase.Split(',');
-        Debug.Log(testzin[1]);
-        playerName = testzin[1];
-        Debug.Log(playerName);
-        name.text = playerName;
+        //var nickname = getNickname.GetNickname();
+        //Debug.Log(nickname);
+        //testphrase = nickname.ToString();
+        //Debug.Log(testphrase);
+        //string[] testzin = testphrase.Split(',');
+        //Debug.Log(testzin[1]);
+        //playerName = testzin[1];
+        //Debug.Log(playerName);
+        //name.text = playerName;
 
         //score.text = playerScore;
         //scoreholder = testzin[4].ToString();
@@ -50,5 +52,6 @@ public class getNickname : MonoBehaviour
     {
         Debug.Log(msg);
     }
-}
 
+
+}
