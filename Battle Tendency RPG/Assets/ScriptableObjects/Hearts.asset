@@ -15,7 +15,4 @@ MonoBehaviour:
   loots:
   - thisLoot: {fileID: 3067421944625666462, guid: ebc9ca61dc6fb0e4fac371551123c840,
       type: 3}
-    lootChange: 50
-  - thisLoot: {fileID: 3372939651851244942, guid: 199a49ee387673843828420ac31ae961,
-      type: 3}
-    lootChange: 40
+    lootChange: 25
