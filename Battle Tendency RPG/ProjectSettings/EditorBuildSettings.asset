@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/createNickname.unity
     guid: 5679e45abca37a443991f9b1877393ae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HouseInside.unity
     guid: 1f80cc32511faf949a3c38d837ed9232
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 242c7f291002bc249b1c789589a911ce
   - enabled: 1
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestArea.unity
     guid: ff1697a792356b246893a9fb79d8bcbf
+  - enabled: 1
+    path: Assets/Scenes/ForestScene.unity
+    guid: 7cd82f67afaf5b7449b59621b3eaa619
   m_configObjects: {}
