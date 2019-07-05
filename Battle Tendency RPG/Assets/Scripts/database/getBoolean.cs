@@ -18,6 +18,7 @@ public class getBoolean : MonoBehaviour
     {
         var getBoolean = new DataService("booleanholder.db");
         string nickname2 = (PlayerPrefs.GetString("tutorialTextKeyName"));
+        getBoolean.CreateBooleanHolder(nickname2);
         //getBoolean.ChangeFireBoolean("false", nickname2);
         //getBoolean.ChangeHolyBoolean("true", nickname2);
         //getBoolean.CreateDB ();
