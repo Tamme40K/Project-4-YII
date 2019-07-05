@@ -17,7 +17,7 @@ public class ItemManager : getBoolean
 
     void Start()
     {
-        //TO DO: Fetch item booleans from the database
+        // Fetch item booleans from the database
         fireItem = bool.Parse(GetFireValue());
         holyItem = bool.Parse(GetHolyValue());
 
