@@ -70981,6 +70981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7754128875691645260, guid: 6a54ebf83f3777245bbfb9952e0b3f53,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7754128875691645258, guid: 6a54ebf83f3777245bbfb9952e0b3f53,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -71069,6 +71074,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PopUps
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683270912688684965, guid: 9df7cb24ce7f480419b401fc86aa19f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683270911552892960, guid: 9df7cb24ce7f480419b401fc86aa19f6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6683270911382796888, guid: 9df7cb24ce7f480419b401fc86aa19f6,
         type: 3}
@@ -71432,6 +71447,12 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 1, b: 1, a: 0.49803922}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!1 &1239345276125950194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4594535901151448613, guid: dd19f0cf00a315542be16bc42cfc09de,
+    type: 3}
+  m_PrefabInstance: {fileID: 3382234078536466135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2336198902681535025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71499,6 +71520,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2336198902974266330, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336198903466336498, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9057173072991881846, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3703537101046870931, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487388007902717853, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2357686800917412076, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998082287404618337, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 538123004821561127, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2727136117312835427, guid: 6cc96667d21f5c74bbce25440bc449d5,
+        type: 3}
+    - target: {fileID: 8149377611863433417, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: holyButton
+      value: 
+      objectReference: {fileID: 1239345276125950194}
+    - target: {fileID: 8149377611863433417, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: fireButton
+      value: 
+      objectReference: {fileID: 1239345276125950194}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36d5f99013dc1d8499ed736ac65e6e8f, type: 3}
 --- !u!114 &2336198902681535026 stripped
@@ -71524,6 +71596,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MobileSingleStickControl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4594535901151448613, guid: dd19f0cf00a315542be16bc42cfc09de,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4594535901131768965, guid: dd19f0cf00a315542be16bc42cfc09de,
         type: 3}
@@ -71643,7 +71720,7 @@ PrefabInstance:
     - target: {fileID: 4594535901131768961, guid: dd19f0cf00a315542be16bc42cfc09de,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -195
+      value: -237
       objectReference: {fileID: 0}
     - target: {fileID: 4594535901131768961, guid: dd19f0cf00a315542be16bc42cfc09de,
         type: 3}

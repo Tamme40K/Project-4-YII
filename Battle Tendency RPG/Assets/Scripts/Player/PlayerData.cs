@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 [System.Serializable]
 public class PlayerData 
@@ -9,7 +11,8 @@ public class PlayerData
     public int level;
     public int health;
     public float[] position;
-
+    public Scene currentScene;
+    public string sceneName;
     public PlayerData(PlayerHealthSaveTest player)
     {
         level = player.level;
@@ -19,6 +22,10 @@ public class PlayerData
         position[0] = player.transform.position.x;
         position[1] = player.transform.position.y;
         position[2] = player.transform.position.z;
+
+        currentScene = SceneManager.GetActiveScene();
+        sceneName = currentScene.name;
+        Debug.Log(sceneName);
 
     }
 

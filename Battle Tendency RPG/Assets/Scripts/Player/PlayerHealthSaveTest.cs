@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthSaveTest : MonoBehaviour
 {
     public int level = 3;
     public int health = 40;
-
-
+    public string scene;
+    public Scene currentScene;
+    public string currentSceneName;
     public void SavePlayer()
     {
         SaveSystem.SavePlayer(this);
@@ -20,6 +22,15 @@ public class PlayerHealthSaveTest : MonoBehaviour
 
         level = data.level;
         health = data.health;
+        scene = data.sceneName;
+
+        currentScene = SceneManager.GetActiveScene();
+        currentSceneName = currentScene.name;
+
+        if (currentSceneName != scene)
+        {
+            SceneManager.LoadScene(scene);
+        }
 
         Vector3 position;
         position.x = data.position[0];
@@ -27,11 +38,13 @@ public class PlayerHealthSaveTest : MonoBehaviour
         position.z = data.position[2];
 
         transform.position = position;
+
+        Debug.Log(scene);
     }
     
     void Start()
     {
-        InvokeRepeating("SavePlayer", 0, 120); 
+        //InvokeRepeating("SavePlayer", 0, 120); als dit aan is dan word gesaved GELIJK als je scene veranderd dus je load is altijd in zelfde scene
     }
 
     //private IEnumerator SavePlayerCo()

@@ -74,7 +74,8 @@ public class DataService  {
 				Id = 1,
 				Name = "Tom",
 				Score = 0, 
-                BoolHolder = "false"
+                FireBoolHolder = "false", 
+                HolyBoolHolder = "false"
 			}
 		});
 	}
@@ -103,6 +104,34 @@ public class DataService  {
         var p = _connection.Table<Nickname>().Where(x => x.Name == nickname).FirstOrDefault();
 
         return p.ToString();
+    }
+
+    public string GetFireBooleanValue(string nickname)
+    {
+        var p = _connection.Table<BooleanHolder>().Where(x => x.Name == nickname).FirstOrDefault();
+
+        return p.ToString();
+    }
+
+    public string GetHolyBooleanValue(string nickname)
+    {
+        var p = _connection.Table<BooleanHolder>().Where(x => x.Name == nickname).FirstOrDefault();
+
+        return p.ToString();
+    }
+
+    public void ChangeFireBoolean(string boolean, string nickname)
+    {
+        var tp = _connection.Query<BooleanHolder>("UPDATE BooleanHolder SET FireBoolHolder = '" + boolean + "' WHERE name = '" + nickname + "';").FirstOrDefault();
+
+        _connection.Update(tp);
+    }
+
+    public void ChangeHolyBoolean(string boolean, string nickname)
+    {
+        var tp = _connection.Query<BooleanHolder>("UPDATE BooleanHolder SET HolyBoolHolder = '" + boolean + "' WHERE name = '" + nickname + "';").FirstOrDefault();
+
+        _connection.Update(tp);
     }
 
     public void AddPoints()
@@ -157,7 +186,8 @@ public class DataService  {
         {
             Name = name,
             Score = 0,
-            BoolHolder = "false"
+            FireBoolHolder = "false", 
+            HolyBoolHolder = "false"
         };
         _connection.Insert(p);
         return p;
