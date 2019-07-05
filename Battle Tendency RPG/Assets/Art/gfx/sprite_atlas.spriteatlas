@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 80970fdea2d44ad42ada01bca6d083b3, type: 3}
-    totalSpriteSurfaceArea: 3011092
+    totalSpriteSurfaceArea: 3031092
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -375,6 +375,7 @@ SpriteAtlas:
   - {fileID: 7274838496166343488, guid: 078842d3eaca99c4ab881091350486ef, type: 3}
   - {fileID: -8506932439865520012, guid: 078842d3eaca99c4ab881091350486ef, type: 3}
   - {fileID: 21300000, guid: e182aa149abc0b14c83ec7e27fa309b3, type: 3}
+  - {fileID: 21300000, guid: b28afaa51b817284e8234cea13ba6ba7, type: 3}
   - {fileID: -872947984015748712, guid: 595464e581c41ab42839445f5a5934f3, type: 3}
   - {fileID: 4004008643541842471, guid: 595464e581c41ab42839445f5a5934f3, type: 3}
   - {fileID: 6703265110210787806, guid: 595464e581c41ab42839445f5a5934f3, type: 3}
@@ -1448,6 +1449,7 @@ SpriteAtlas:
   - {fileID: 7286859629914053883, guid: d04e0bb8e9f140545a1a05d2728f21ac, type: 3}
   - {fileID: 21300000, guid: 693b04d804ca9e34d9cbf74dca053960, type: 3}
   - {fileID: 21300000, guid: e17512e9115435246ae1d86b2de33629, type: 3}
+  - {fileID: 21300000, guid: 4bbc797a81601ae4aae88cace88c08de, type: 3}
   - {fileID: 21300000, guid: a4b5fbaa77771414ea4988f9dbd16601, type: 3}
   - {fileID: -1790513009360131488, guid: 35ac3a6b8dc1fdb47868cc2d6bc289fd, type: 3}
   - {fileID: 6796940128468367395, guid: 35ac3a6b8dc1fdb47868cc2d6bc289fd, type: 3}
@@ -2456,7 +2458,6 @@ SpriteAtlas:
   - {fileID: -970427126931354846, guid: afa6a6cc994ab8144babede1702c6ea3, type: 3}
   - {fileID: 5525989588186001599, guid: afa6a6cc994ab8144babede1702c6ea3, type: 3}
   - {fileID: -8828042392778067252, guid: afa6a6cc994ab8144babede1702c6ea3, type: 3}
-  - {fileID: 21300000, guid: 0387e1bcec02bc34d9e4ca326c853457, type: 3}
   - {fileID: 136123638574666257, guid: 3f3abe0db9f0fb34da10b67ad3dd319e, type: 3}
   - {fileID: 293919518158258091, guid: 3f3abe0db9f0fb34da10b67ad3dd319e, type: 3}
   - {fileID: -2417109873707893127, guid: 3f3abe0db9f0fb34da10b67ad3dd319e, type: 3}
@@ -3880,6 +3881,7 @@ SpriteAtlas:
   - character_70
   - character_71
   - frame_5_delay-0.2s
+  - 'H_button '
   - modified gfx melee sprites_15
   - modified gfx melee sprites_14
   - modified gfx melee sprites_13
@@ -4953,6 +4955,7 @@ SpriteAtlas:
   - VillageMan_9
   - frame_4_delay-0.2s
   - Square
+  - F_button
   - frame_6_delay-0.2s
   - NPC_test_11
   - NPC_test_10
