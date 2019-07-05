@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class ItemManager : MonoBehaviour
+public class ItemManager : getBoolean
 {
     public bool fireItem;
     public bool holyItem;
+    public GameObject holyButton;
+    public GameObject fireButton;
 
     //public GameObject holyButton;
     //public GameObject fireButton;
@@ -16,7 +18,12 @@ public class ItemManager : MonoBehaviour
     void Start()
     {
         //TO DO: Fetch item booleans from the database
-        // fireItem = database.fetch(fireItem);
+        fireItem = bool.Parse(GetFireValue());
+        holyItem = bool.Parse(GetHolyValue());
+
+        Debug.Log("Dit is de itemmanager value" + GetFireValue());
+        Debug.Log("Dit is de itemmanager value" + holyItem.ToString());
+
 
         //TO DO: Only enable buttons when the magic item is activated.
         //if (holyItem)
@@ -25,7 +32,7 @@ public class ItemManager : MonoBehaviour
         //} else { holyButton.SetActive(false); }
         //if (fireItem)
         //{
-        //    fireButton.SetActive(true);
+        //fireButton.SetActive(true);
         //} else { holyButton.SetActive(true); }
     }
 
@@ -35,13 +42,14 @@ public class ItemManager : MonoBehaviour
         if (CollisionCheck.gameObject.name == "FireItem")
         {
             fireItem = true;
-            // fireItem = database.push(fireItem);
+            //database.push(fireItem); //change value in db naar true
+            ChangeFireValue(true);
             //fireButton.SetActive(true);
         }
         if (CollisionCheck.gameObject.name == "HolyItem")
         {
             holyItem = true;
-            // holyItem = database.push(holyItem);
+            ChangeHolyValue(true);
             //holyButton.SetActive(true);
         }
     }
