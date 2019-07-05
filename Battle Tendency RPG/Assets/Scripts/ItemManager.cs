@@ -8,12 +8,25 @@ public class ItemManager : MonoBehaviour
     public bool fireItem;
     public bool holyItem;
 
+    //public GameObject holyButton;
+    //public GameObject fireButton;
+
     private string playerRotation = "";
 
     void Start()
     {
         //TO DO: Fetch item booleans from the database
         // fireItem = database.fetch(fireItem);
+
+        //TO DO: Only enable buttons when the magic item is activated.
+        //if (holyItem)
+        //{
+        //    holyButton.SetActive(true);
+        //} else { holyButton.SetActive(false); }
+        //if (fireItem)
+        //{
+        //    fireButton.SetActive(true);
+        //} else { holyButton.SetActive(true); }
     }
 
     // Controlleer wanneer de speler een item aanraakt; wanneer ja, dan 'bezit' de speler nu dit item.
@@ -22,10 +35,14 @@ public class ItemManager : MonoBehaviour
         if (CollisionCheck.gameObject.name == "FireItem")
         {
             fireItem = true;
+            // fireItem = database.push(fireItem);
+            //fireButton.SetActive(true);
         }
         if (CollisionCheck.gameObject.name == "HolyItem")
         {
             holyItem = true;
+            // holyItem = database.push(holyItem);
+            //holyButton.SetActive(true);
         }
     }
 
@@ -53,8 +70,6 @@ public class ItemManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    // TO DO: verander de sprites van de hitboxes wanneer de button wordt geraakt
     void Update()
     {
         // Turn the hitbox off first thing in the update, to prevent it from staying on.

@@ -10,8 +10,6 @@ public class ObstacleManager : MonoBehaviour
     private bool MagicEffective = false;
     private string MagicUsed = "";
 
-    
-
     void OnTriggerEnter2D(Collider2D CollisionCheck)
     {
         bool collissionCheck(string hitbox)
