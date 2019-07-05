@@ -66,14 +66,15 @@ public class DataService  {
 	}
 
 	public void CreateDB(){
-		_connection.DropTable<Nickname> ();
-		_connection.CreateTable<Nickname> ();
+		_connection.DropTable<BooleanHolder> ();
+		_connection.CreateTable<BooleanHolder> ();
 
 		_connection.InsertAll (new[]{
-			new Nickname{
+			new BooleanHolder{
 				Id = 1,
 				Name = "Tom",
-				Score = 0
+				Score = 0, 
+                BoolHolder = "false"
 			}
 		});
 	}
@@ -145,6 +146,18 @@ public class DataService  {
         {
             Name = name,
             Score = 0
+        };
+        _connection.Insert(p);
+        return p;
+    }
+
+    public BooleanHolder CreateBooleanHolder(string name)
+    {
+        var p = new BooleanHolder
+        {
+            Name = name,
+            Score = 0,
+            BoolHolder = "false"
         };
         _connection.Insert(p);
         return p;

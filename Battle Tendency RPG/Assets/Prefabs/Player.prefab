@@ -66,7 +66,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2014036377
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 8387997009269029421, guid: 6cc96667d21f5c74bbce25440bc449d5,
     type: 3}
@@ -175,6 +175,7 @@ GameObject:
   - component: {fileID: 2336198902716363755}
   - component: {fileID: 1973176898}
   - component: {fileID: 1973176899}
+  - component: {fileID: 1074167859}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -236,7 +237,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2014036377
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 7152930139536384079, guid: 078842d3eaca99c4ab881091350486ef,
     type: 3}
@@ -316,6 +317,7 @@ MonoBehaviour:
   startingPosition: {fileID: 11400000, guid: 4f60f18c1f0eecf49bbe597f40490221, type: 2}
   deathEffect: {fileID: 6410281091442359049, guid: c53580e5f0bb0b14389e1c1f34bc866d,
     type: 3}
+  sceneToLoad: deathScene
 --- !u!95 &2336198902716363754
 Animator:
   serializedVersion: 3
@@ -404,6 +406,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contextclue: {fileID: 1443467854}
   contextActive: 0
+--- !u!114 &1074167859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2336198902716363752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10f88419e04f30f4a8361134ff70be13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 3
+  health: 40
 --- !u!1 &2336198902974266330
 GameObject:
   m_ObjectHideFlags: 0

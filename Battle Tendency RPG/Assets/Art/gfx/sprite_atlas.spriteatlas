@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 80970fdea2d44ad42ada01bca6d083b3, type: 3}
-    totalSpriteSurfaceArea: 2552404
+    totalSpriteSurfaceArea: 2561620
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -391,6 +391,18 @@ SpriteAtlas:
   - {fileID: -8041784067552993899, guid: 595464e581c41ab42839445f5a5934f3, type: 3}
   - {fileID: 1532286108747742640, guid: 595464e581c41ab42839445f5a5934f3, type: 3}
   - {fileID: 147799070741053269, guid: 595464e581c41ab42839445f5a5934f3, type: 3}
+  - {fileID: -1588707430369709868, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 1269323359398250663, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 1570663829722904693, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 9107384998687645479, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 8224124334607301300, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 7946739453343321082, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 3479983707309357564, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 9104650670479662651, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 8357293588786038174, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 2895964165295529831, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 6449815590937797590, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
+  - {fileID: 2382069247244199071, guid: ac1a546637b75f3489c2827ee7ab1b60, type: 3}
   - {fileID: -1986772863260763996, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
   - {fileID: 5760800594879907098, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
   - {fileID: 7597474578557255370, guid: 6cc96667d21f5c74bbce25440bc449d5, type: 3}
@@ -2270,6 +2282,18 @@ SpriteAtlas:
   - modified gfx melee sprites_1
   - modified gfx melee sprites_2
   - modified gfx melee sprites_3
+  - npc1_4
+  - npc1_5
+  - npc1_6
+  - npc1_7
+  - npc1_0
+  - npc1_1
+  - npc1_2
+  - npc1_11
+  - npc1_3
+  - npc1_10
+  - npc1_8
+  - npc1_9
   - objects_71
   - objects_70
   - objects_73

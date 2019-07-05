@@ -6805,7 +6805,7 @@ PrefabInstance:
     - target: {fileID: 2025906688985773177, guid: 20b34cfe55dd71248b7ebd22b856fe27,
         type: 3}
       propertyPath: sceneToLoad
-      value: SampleScene2
+      value: HotConnectionHubWorld
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20b34cfe55dd71248b7ebd22b856fe27, type: 3}

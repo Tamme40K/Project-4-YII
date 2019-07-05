@@ -40,3 +40,17 @@ public class Nickname
         return string.Format("{0}, {1}, {2}", Id, Name, Score);
     }
 }
+
+public class BooleanHolder
+{
+    [PrimaryKey, AutoIncrement]
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public int Score { get; set; }
+    public string BoolHolder { get; set; }
+
+    public override string ToString()
+    {
+        return string.Format("{0}, {1}, {2}, {3}", Id, Name, Score, BoolHolder);
+    }
+}
