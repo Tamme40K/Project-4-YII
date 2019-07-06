@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2014036377
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 8231932596680892034, guid: 347a10d2ad4d0804bb9116d602cde0e0,
     type: 3}
@@ -172,7 +172,7 @@ MonoBehaviour:
   enemyName: the Log
   baseAttack: 1
   moveSpeed: 1.5
-  deathEffect: {fileID: 6410281091442359049, guid: c53580e5f0bb0b14389e1c1f34bc866d,
+  deathEffect: {fileID: 1677567821205200066, guid: c6edbc33fd7650b4c87e188f3c35d6a0,
     type: 3}
   score_worth: 20
   thisLoot: {fileID: 11400000, guid: 936dc53479c721b428ddfd83cb5ae8ce, type: 2}

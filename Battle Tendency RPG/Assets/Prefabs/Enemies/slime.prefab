@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2014036377
-  m_SortingLayer: 2
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 3519091041362292632, guid: dc175680e5ae3024fb7227e019892765,
     type: 3}
@@ -175,7 +175,7 @@ MonoBehaviour:
   deathEffect: {fileID: 6410281091442359049, guid: c53580e5f0bb0b14389e1c1f34bc866d,
     type: 3}
   score_worth: 1
-  thisLoot: {fileID: 0}
+  thisLoot: {fileID: 11400000, guid: 936dc53479c721b428ddfd83cb5ae8ce, type: 2}
   myRigidbody: {fileID: 0}
   target: {fileID: 0}
   chaseRadius: 4
