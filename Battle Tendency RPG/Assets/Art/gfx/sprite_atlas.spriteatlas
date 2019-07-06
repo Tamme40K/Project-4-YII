@@ -42,7 +42,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 80970fdea2d44ad42ada01bca6d083b3, type: 3}
-    totalSpriteSurfaceArea: 3031092
+    totalSpriteSurfaceArea: 3518370
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -289,6 +289,7 @@ SpriteAtlas:
   - {fileID: 5566842953363755866, guid: 103f82e2ba109a8408d6b4a9de463e46, type: 3}
   - {fileID: -7445369939883215787, guid: 103f82e2ba109a8408d6b4a9de463e46, type: 3}
   - {fileID: 21300000, guid: 697f56e29d5fdbf4c966cea1365ee09b, type: 3}
+  - {fileID: 21300000, guid: ecb84f13f311db349af8ce8633fb5352, type: 3}
   - {fileID: 4499669597689698832, guid: 626aa473b0f7279448d6c2d1e4788ca2, type: 3}
   - {fileID: 3848826410958415621, guid: 626aa473b0f7279448d6c2d1e4788ca2, type: 3}
   - {fileID: -17759888994004266, guid: 626aa473b0f7279448d6c2d1e4788ca2, type: 3}
@@ -3795,6 +3796,7 @@ SpriteAtlas:
   - log_21
   - log_22
   - frame_0_delay-0.2s
+  - Final_Boss_BG
   - imp death_0
   - imp death_1
   - imp death_2
