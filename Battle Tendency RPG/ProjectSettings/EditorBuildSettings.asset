@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalBoss.unity
     guid: 2e7b8346cfd38944aae441f7dbf78d52
+  - enabled: 1
+    path: Assets/Scenes/victoryScene.unity
+    guid: 69f6612ab2714064b8e031cbead978a6
   m_configObjects: {}

@@ -49070,6 +49070,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 75ad2845a6b1d91409ec3e246691c570,
         type: 2}
+    - target: {fileID: 5629659384882234103, guid: f21061b227aa3e74a98acb26459d8323,
+        type: 3}
+      propertyPath: enemyName
+      value: fallenHero
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f21061b227aa3e74a98acb26459d8323, type: 3}
 --- !u!95 &817097387 stripped
@@ -53965,11 +53970,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2727136117312835427, guid: 6cc96667d21f5c74bbce25440bc449d5,
         type: 3}
-    - target: {fileID: 2336198902716363757, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
-        type: 3}
-      propertyPath: startingPosition
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8149377611863433417, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
         type: 3}
       propertyPath: holyButton
@@ -53980,6 +53980,12 @@ PrefabInstance:
       propertyPath: fireButton
       value: 
       objectReference: {fileID: 1267053416}
+    - target: {fileID: 2336198902716363757, guid: 36d5f99013dc1d8499ed736ac65e6e8f,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f60f18c1f0eecf49bbe597f40490221,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36d5f99013dc1d8499ed736ac65e6e8f, type: 3}
 --- !u!1 &1886893263 stripped
