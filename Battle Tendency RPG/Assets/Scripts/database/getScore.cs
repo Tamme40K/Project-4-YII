@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class getScore : MonoBehaviour
+public class getScore : powerUp
 {
     public Text score;
     private string testphrase;

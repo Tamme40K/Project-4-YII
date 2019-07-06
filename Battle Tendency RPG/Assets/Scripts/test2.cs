@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,6 +41,7 @@ public class test2 : MonoBehaviour
         var getScore = new DataService("highschore.db");
         string nickname2 = (PlayerPrefs.GetString("tutorialTextKeyName"));
         getScore.CreateHighscore(nickname2);
+        Debug.Log("dit word geraakt");
         //getScore.ChangePoints(); DIT WERKT
         //UpdatePoints(); DIT WERKT 
         //getScore.CreateDB ();

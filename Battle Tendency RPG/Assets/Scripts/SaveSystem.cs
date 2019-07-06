@@ -2,10 +2,8 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-
-public static class SaveSystem 
+    public static class SaveSystem 
 {
-
     public static void SavePlayer(PlayerHealthSaveTest player)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -16,9 +14,6 @@ public static class SaveSystem
 
         formatter.Serialize(stream, data);
         stream.Close();
-
-
-
     }
 
     public static PlayerData LoadPlayer()
@@ -32,7 +27,6 @@ public static class SaveSystem
             PlayerData data = formatter.Deserialize(stream) as PlayerData;
             stream.Close();
             return data;
-
         }
         else
         {
@@ -40,5 +34,4 @@ public static class SaveSystem
             return null;
         }
     }
-
 }
