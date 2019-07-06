@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum EnemyState
 {
@@ -33,15 +34,30 @@ public class Enemy : getScore
     private void TakeDamage(float damage)
     {
         health -= damage;
-        if (health <= 0)
+        if (health <= 0 && this.enemyName == "fallenHero")
         {
             DeathEffect();
-            MakeLoot();
-            this.gameObject.SetActive(false);
-            //AddPoints(score_worth);
-            //ReadScore();
-            UpdatePoints(score_worth);
-            ReadPoints();
+            SceneManager.LoadScene("victoryScene");
+            //DeathEffect();
+            //MakeLoot();
+            //this.gameObject.SetActive(false);
+            ////AddPoints(score_worth);
+            ////ReadScore();
+            //UpdatePoints(score_worth);
+            //ReadPoints();
+        }
+        else
+        {
+            if (health <= 0)
+            {
+                DeathEffect();
+                MakeLoot();
+                this.gameObject.SetActive(false);
+                //AddPoints(score_worth);
+                //ReadScore();
+                UpdatePoints(score_worth);
+                ReadPoints();
+            }
         }
     }
 
