@@ -34,7 +34,7 @@ public class TutorialManager : MonoBehaviour
 
             if (popUpIndex == 0)
             {
-                if /*(Input.GetMouseButtonDown(0))*/ (target.position != new Vector3(-6.6f, 1.1f, 0.0f))
+                if (Input.GetMouseButtonDown(0)) //(target.position != new Vector3(0f, -3f, 0.0f))
                 {
                     popUpIndex++;
                     tutorialnumber.initialValue++;
