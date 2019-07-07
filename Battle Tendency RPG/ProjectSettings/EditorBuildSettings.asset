@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseInside.unity
     guid: 1f80cc32511faf949a3c38d837ed9232
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene2.unity
     guid: fd6e025e01884e44b93503ca8c3d2b53
   - enabled: 1
@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/victoryScene.unity
     guid: 69f6612ab2714064b8e031cbead978a6
+  - enabled: 1
+    path: Assets/Scenes/XanderScenePrototype.unity
+    guid: efcfc577c6a72a9439f18580da143c4b
   m_configObjects: {}
