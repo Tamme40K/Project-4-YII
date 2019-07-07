@@ -1534,6 +1534,7 @@ SpriteAtlas:
   - {fileID: -1083170264033990210, guid: 61c6142988500524aa16b6c079dc23f4, type: 3}
   - {fileID: 21300000, guid: 4589e4395fc881b46918f2a378253060, type: 3}
   - {fileID: 21300000, guid: df5861c9ff9e03646ad6fc9c18bf6336, type: 3}
+  - {fileID: 21300000, guid: e17512e9115435246ae1d86b2de33629, type: 3}
   - {fileID: 21300000, guid: fcc5d2f9c5ee7a44798eb000274c5056, type: 3}
   - {fileID: 21300000, guid: ef08d42a59a49104dbe2aa9ee95badd1, type: 3}
   - {fileID: 21300000, guid: 8038925a1e442bc45bed8d3c956f7c2a, type: 3}
@@ -5143,6 +5144,7 @@ SpriteAtlas:
   - assets_dungeon_9
   - L idle-3
   - walk-4
+  - Square
   - R walk-6
   - R idle-2
   - R idle-1
