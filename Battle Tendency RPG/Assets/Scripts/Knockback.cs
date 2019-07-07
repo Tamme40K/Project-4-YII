@@ -11,11 +11,7 @@ public class Knockback : MonoBehaviour
     //check of de gameobject waar ik tegen aan kom een enemy of player tag heeft in Unity
     private void OnTriggerEnter2D(Collider2D other)
     {
-	    if (other.gameObject.CompareTag("breakable"))
-	    {
-		    other.GetComponent<pot>().Smash();
-	    }
-	    if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("enemy") || other.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
             if (hit != null) //als er iets is om te hitten

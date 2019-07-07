@@ -46,6 +46,5 @@ MonoBehaviour:
   popUps:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   target: {fileID: 0}
   tutorialnumber: {fileID: 11400000, guid: 4c27682ca3df95049aa353ac832709ba, type: 2}

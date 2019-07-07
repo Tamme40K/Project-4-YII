@@ -28,16 +28,10 @@ public class SceneTransition : MonoBehaviour
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             playerStorage.initialValue = playerPosition;
-            StartCoroutine(FadeCo());
-            //tutorialnumber.initialValue = 999; //zodat je niet meer in de loop komt van de tutorial
+            tutorialnumber.initialValue = 999; //zodat je niet meer in de loop komt van de tutorial
             //SceneManager.LoadScene(sceneToLoad);
+            StartCoroutine(FadeCo());
         }
-    }
-
-    public void knop_geklikt()
-    {
-        playerStorage.initialValue = playerPosition;
-        StartCoroutine(FadeCo());
     }
 
     public IEnumerator FadeCo()
